@@ -31,10 +31,14 @@
 
       cells.append("rect")
            .attr("x", function(d) { return d.x; })
-           .attr("y", function(d) { return d.y; })
-           .attr("width", function(d) { return d.dx * (d.percentageComplete/100); })
-           .attr("height", function(d) { return d.dy; })
-           .attr("fill", "#B8A10F");
+           .attr("width", function(d) { return d.dx; })
+           .attr("height", 0)
+           .attr("fill", "#B8A10F")
+           .transition()
+           .delay(function (d) { return 20; })
+           .duration(800)
+           .attr("y", function(d) { return d.y + d.dy; })
+           .attr("height", function(d) { return d.dy * (d.percentageComplete/100); });
 
       cells.append("text")
            .attr("x", function(d) { return d.x + d.dx / 2 })
