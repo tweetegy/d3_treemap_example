@@ -1,0 +1,12 @@
+{
+ "name": "goals",
+ "children": [
+    {"name": "Diet", "value": 200, "percentageComplete": 5},
+    {"name": "Pay rise", "value": 200, "percentageComplete": 50},
+    {"name": "Exercise", "value": 100, "percentageComplete": 70},
+    {"name": "Save for holiday", "value": 30, "percentageComplete": 10},
+    {"name": "Learn D3", "value": 100, "percentageComplete": 40},
+    {"name": "Improve work/life balance", "value": 100, "percentageComplete": 60},
+    {"name": "Launch Startup", "value": 100, "percentageComplete": 20}
+   ]
+}
